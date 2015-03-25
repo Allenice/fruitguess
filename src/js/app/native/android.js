@@ -10,17 +10,17 @@ define(function () {
     // 显示分享
     showShare: function (score) {
       score = score || '';
-      jsb.reflection.callStaticMethod("com/allenice/fruitguess/AppActivity", "showShare", "(I)V", score);
+      jsb.reflection.callStaticMethod("com/cocos2d/fruitguess/AppActivity", "showShare", "(I)V", score);
     },
 
     // 显示广告
     showAd: function() {
-      jsb.reflection.callStaticMethod("com/allenice/fruitguess/AppActivity", "showAd", "()V");
+      jsb.reflection.callStaticMethod("com/cocos2d/fruitguess/AppActivity", "showAd", "()V");
     },
 
     // 场景统计
     fireEvent: function(eventId) {
-      jsb.reflection.callStaticMethod("com/allenice/fruitguess/AppActivity", "fireEvent", "(Ljava/lang/String;)V", eventId);
+      jsb.reflection.callStaticMethod("com/cocos2d/fruitguess/AppActivity", "fireEvent", "(Ljava/lang/String;)V", eventId);
     }
 
   }
